@@ -1,0 +1,24 @@
+{
+  "name": "assignment-3-apis-mhilborn-at-hbs",
+  "version": "1.0.0",
+  "description": "What was the GraphQL mutation you used to create a discussion post?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy",
+    "start": "eleventy --serve --incremental",
+    "version": "eleventy --version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@harvard.github.com:cscie114/assignment-3-apis-mhilborn-at-hbs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-fetch": "^3.0.0",
+    "dotenv": "^16.0.3"
+  }
+}

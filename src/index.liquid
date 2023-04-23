@@ -1,0 +1,9 @@
+---
+title: WordPress Headless CMS Demo
+layout: base
+---
+
+{% for post in wpposts %}
+  <h2>{{ post.title.rendered }}</h2>
+  <div>{{ post.content.rendered }}</div>
+{% endfor %}
