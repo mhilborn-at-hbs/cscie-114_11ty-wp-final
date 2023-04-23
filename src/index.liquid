@@ -1,9 +1,15 @@
 ---
-title: WordPress Headless CMS Demo
-layout: base
+title: A Blog About Star Wars Movies
+layout: base.liquid
 ---
 
-{% for post in wpposts %}
-  <h2>{{ post.title.rendered }}</h2>
-  <div>{{ post.content.rendered }}</div>
-{% endfor %}
+<h2>{{ title }}</h2>
+<ul>
+  {% for post in collections.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.data.post.title.rendered }}</a><br/>
+      <div>{{ post.data.post.date }}</div>
+      <div>{{ post.data.post.excerpt.rendered }}</siv>
+    </li>
+  {% endfor %}
+</ul>
