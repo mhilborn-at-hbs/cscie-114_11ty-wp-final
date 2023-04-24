@@ -2,7 +2,12 @@ name: GitHub Wordpress to Netlify Demo
 run-name: ${{ github.actor }} is deploying from WordPress to Netlify 🚀
 env: 
   WP_ENDPOINT: ${{ secrets.WP_ENDPOINT }}
-on: [push]
+on:
+  [push]
+  # Allows external webhook trigger
+  repository_dispatch:
+    types:
+      - wordpress
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
