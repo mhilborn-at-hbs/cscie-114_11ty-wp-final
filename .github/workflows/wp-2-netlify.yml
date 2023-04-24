@@ -22,7 +22,9 @@ jobs:
         uses: nwtgck/actions-netlify@v2.0
         with:
           publish-dir: './dist'
+          functions-dir: './netlify/functions'
           production-branch: main
+          production-deploy: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-message: "Deploy from GitHub Actions"
         env:
