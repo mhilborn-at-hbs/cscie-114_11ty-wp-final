@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is deploying from WordPress to Netlify 🚀
 env: 
   WP_ENDPOINT: ${{ secrets.WP_ENDPOINT }}
 on:
-  [push]
+  push
   # Allows external webhook trigger
   repository_dispatch:
     types:
