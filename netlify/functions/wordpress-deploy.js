@@ -14,8 +14,7 @@ const fetchOptions   = {
 
 exports.handler = async (event, context) => {
   let json = {
-    endpoint: gitHubEndpoint,
-    authz: process.env.GITHUB_AUTHZ    
+    endpoint: gitHubEndpoint,    
   };
   
   return {
