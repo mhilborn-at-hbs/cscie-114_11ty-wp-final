@@ -3,8 +3,6 @@ run-name: ${{ github.actor }} is deploying from WordPress to Netlify 🚀
 env: 
   WP_ENDPOINT: ${{ secrets.WP_ENDPOINT }}
 on:
-  push:
-    branches: [main]
   repository_dispatch:
     types:
       - wordpress
