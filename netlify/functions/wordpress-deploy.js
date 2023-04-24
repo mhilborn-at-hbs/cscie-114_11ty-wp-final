@@ -13,6 +13,18 @@ const fetchOptions   = {
 }
 
 exports.handler = async (event, context) => {
+  let json = {
+    endpoint: gitHubEndpoint,
+    authz: process.env.GITHUB_AUTHZ    
+  };
+  
+  return {
+    statusCode: 200,
+    body: JSON.stringify(json)
+  };
+}
+/*
+exports.handler = async (event, context) => {
     let json = {};
     try {
         console.log(`Fetching URL: ${gitHubEndpoint}`);
@@ -29,3 +41,4 @@ exports.handler = async (event, context) => {
     };
 }
 
+*/
