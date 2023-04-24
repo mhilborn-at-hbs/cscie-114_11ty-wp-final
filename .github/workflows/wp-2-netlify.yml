@@ -16,9 +16,9 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: Set up node 18.x
         uses: actions/setup-node@v3
-          with:
-            node-version: '18.x'
-            cache: 'npm'
+        with:
+          node-version: '18.x'
+          cache: 'npm'
       - name: Building the application
         run: |
           npm ci
