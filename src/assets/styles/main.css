@@ -1,3 +1,59 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+/*
+ * Styles for all pages
+ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
 }
+
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: 0.5rem auto;
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-bottom: thin solid gold;
+    border-top: thin solid gold;
+    padding: 5px 0 5px 0;
+    color: gold;
+}
+
+header div {
+    height: 50px;
+}
+
+header div:last-child {
+    text-align: right;
+}
+
+header img {
+    max-height: 100%;
+}
+
+footer {
+    border-top: thin solid gold;
+    font-size: 0.85rem;
+}
+
+a:link, a:visited, a:hover, a:active {
+}
+
+main {
+    background-color: white;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+main li {
+    margin-top:0.5rem;
+}
+/*
+ * Styles for the home page
+ */
